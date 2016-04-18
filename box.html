@@ -1,0 +1,43 @@
+​<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <style>
+
+   .flex
+   {
+      /* style basique */
+      width: 80%;
+      border: 1px solid #555;
+      font: 1em Arial;
+      display: flex;
+      flex-direction: row;
+      margin:0 auto;
+   }
+
+   /* colors */
+   .flex > div:nth-child(1){ background : #009246; }
+   .flex > div:nth-child(2){ background : #F1F2F1; }
+   .flex > div:nth-child(3){ background : #CE2B37; }
+
+   .flex > div
+   {
+       flex:1;
+   }
+   
+@media (max-width: 640px) {
+  .flex {
+    flex-direction: column; /* affichage vertical */
+  }
+
+   </style>
+    
+ </head>
+ <body>
+  <p>Flexbox test</p>
+  <div class="flex">
+    <div>un<p>test<br /><br /><br /><br /><br />test</p></div>
+    <div>deux</div>
+    <div>trois</div>
+  </div>
+ </body>
+</html>
